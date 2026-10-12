@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+    :root {
+        --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+        --font-serif: 'Instrument Serif', Georgia, serif;
+        --font-outfit: 'Outfit', sans-serif;
+    }
+
+    body {
+        font-family: var(--font-jakarta);
+        background-color: #06070B;
+        color: #f8fafc;
+        @apply antialiased min-h-screen selection:bg-purple-500 selection:text-white;
+    }
+}
+
+.font-jakarta {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-serif-title {
+    font-family: 'Instrument Serif', Georgia, serif;
+}
+
+/* Smart Business AI Glassmorphism & Purple Neon Glow Utilities */
+.smart-purple-glow {
+    box-shadow: 0 0 35px rgba(168, 85, 247, 0.25);
+}
+
+.smart-purple-glow-lg {
+    box-shadow: 0 0 60px rgba(168, 85, 247, 0.35);
+}
+
+.smart-border-glow {
+    border-color: rgba(168, 85, 247, 0.35);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+.smart-card {
+    background: linear-gradient(135deg, rgba(17, 18, 29, 0.85) 0%, rgba(10, 11, 17, 0.95) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+}
+
+.smart-card:hover {
+    border-color: rgba(168, 85, 247, 0.4);
+    box-shadow: 0 10px 40px rgba(168, 85, 247, 0.18);
+}
+
+.smart-gradient-text {
+    background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 50%, #c084fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.smart-gradient-accent {
+    background: linear-gradient(135deg, #a855f7 0%, #7c3aed 50%, #4f46e5 100%);
+}
+
+.placement-glow,
+.videograph-glow {
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.25);
+}
+
+.placement-glow-lg,
+.videograph-glow-lg {
+    box-shadow: 0 0 50px rgba(168, 85, 247, 0.35);
+}
+
+.placement-card,
+.videograph-card {
+    background: linear-gradient(135deg, rgba(18, 19, 31, 0.9) 0%, rgba(9, 10, 15, 0.95) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #06070B;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(168, 85, 247, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(168, 85, 247, 0.6);
+}
